@@ -19,7 +19,7 @@ namespace Factory.Controllers
 
         public ActionResult Index()
         {
-            return View(_db.Machines.Include(machine => machine.Date).ToList());
+            return View(_db.Machines.ToList());
         }
 
         public ActionResult Create()
@@ -80,7 +80,7 @@ namespace Factory.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddEngineer(Machine machine int EngineerId)
+        public ActionResult AddEngineer(Machine machine, int EngineerId)
         {
             if (EngineerId != 0)
             {

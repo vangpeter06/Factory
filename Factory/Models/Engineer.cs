@@ -1,4 +1,4 @@
-using System.Collection.Generic;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System;
 
@@ -8,7 +8,7 @@ namespace Factory.Models
   {
     public Engineer()
     {
-      this.joinEntities = new HashSet<EngineerMachine>();
+      this.JoinEntities = new HashSet<EngineerMachine>();
     }
 
     public int EngineerId { get; set; }

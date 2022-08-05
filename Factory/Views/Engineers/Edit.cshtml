@@ -1,5 +1,5 @@
 @{
-  layput = "_Layout";
+  Layout = "_Layout";
 }
 
 @model Factory.Models.Engineer
@@ -13,7 +13,7 @@
   @Html.HiddenFor(model => model.EngineerId)
 
   @Html.LabelFor(model => model.Name)
-  @Html.EditFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
 
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.HireDate, new { type = "date" })

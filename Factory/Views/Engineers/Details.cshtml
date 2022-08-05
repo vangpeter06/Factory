@@ -1,5 +1,5 @@
 @{
-  layput = "_Layout";
+  Layout = "_Layout";
 }
 
 @model Factory.Models.Engineer
@@ -7,7 +7,7 @@
 <h2>Engineer Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
-<h5>Hire Date: @Convert.ToDateTime(Model.HireDate).ToString("MM/DD/YYYY")</h5>
+<h5>Hire Date: @Convert.ToDateTime(Model.HireDate).ToString("MM/dd/yyyy")</h5>
 
 @if(@Model.JoinEntities.Count == 0)
 {

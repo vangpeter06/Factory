@@ -12,8 +12,8 @@
 {
   @Html.HiddenFor(model => model.MachineId)
 
-  @Html.LabelFor(model = model.Name)
-  @Html.EditorFor(model = model.Name)
+  @Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
 
   @Html.Label("Select enginieer")
   @Html.DropDownList("EngineerId")
@@ -22,6 +22,5 @@
 }
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
-<p>@Html.ActionLink("Edit machine", "Edit", new { id = Model.MachineId })</p>
 <p>@Html.ActionLink("Delete machine", "Delete", new { id = Model.MachineId })</p>
 <p>@Html.ActionLink("Go back home", "Index", "Home")</p>
