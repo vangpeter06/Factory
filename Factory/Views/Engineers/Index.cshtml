@@ -2,7 +2,7 @@
   layput = "_Layout";
 }
 
-@model Factory.Models
+@using Factory.Models;
 
 <h2>Engineers</h2>
 
@@ -12,7 +12,7 @@
 }
 
 <ul>
-  @foreach (Engineer engineer  in Model)
+  @foreach (Engineer engineer in Model)
   {
     <li>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId })</li>
   }
