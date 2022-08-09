@@ -12,7 +12,9 @@ namespace Factory.Models
     }
 
     public int MachineId { get; set; }
-    public  string Name { get; set; }
+    public string Name { get; set; }
+    [DisplayFormat(DataFormatString = "0:MM/DD/YYYY")]
+    public DateTime InstallDate { get; set; }
     public virtual ICollection<EngineerMachine> JoinEntities { get; set; }
   }
 }

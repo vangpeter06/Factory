@@ -3,10 +3,12 @@
 }
 
 @model Factory.Models.Machine
+@using Factory.Models
 
 <h2>Machine details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h5>Install Date: @Convert.ToDateTime(Model.InstallDate).ToString("MM/dd/yyyy")</h5>
 
 @if(Model.JoinEntities.Count == 0)
 {

@@ -15,6 +15,9 @@
   @Html.LabelFor(model => model.Name)
   @Html.EditorFor(model => model.Name)
 
+  @Html.LabelFor(model => model.InstallDate)
+  @Html.TextBoxFor(model => model.InstallDate, new { type = "date" })
+
   @Html.Label("Select enginieer")
   @Html.DropDownList("EngineerId")
 
